@@ -1,0 +1,321 @@
+/*login:*/
+.text-center {
+    text-align: center;
+}
+.hr-divider {
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.image-logo {
+    width: 20%;
+}
+.login-form {
+    height: 46px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 18px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    display: block;
+}
+.input-group {
+    padding: 5.5px;
+    text-align: center;
+}
+input {
+    width: 28%;
+    height: 150%;
+}
+.text-login-form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ember36 {
+    width: 27.6%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+}
+#ember37 {
+    width: 27.6%;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  /*  padding: 10px;
+    background-color: #f5f5f5;
+    color: #111;*/
+
+}
+.language {
+        text-align: center;
+            padding: 10px;
+}
+.text-forgot {
+    display: block;
+    margin-top: 5px;
+    color: #959595;
+    font-size: 14px;
+            text-align: center;
+}
+.text-forgot-2 {
+    display: block;
+    margin-top: 5px;
+    color: #959595;
+    font-size: 14px;
+            text-align: center;
+}
+button a {
+  text-decoration: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/*home:*/
+
+/* navbar styles */
+body {
+  padding-top: 50px;
+}
+
+.nav-bar-home {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar-btn .image-logo {
+  /*background-color: #fff;*/
+
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+    top: 0;
+  margin-right: 685px;
+}
+
+.nav-bar-home a {
+  color: #212529;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.nav-bar-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.nav-bar-btn a {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-bar-btn a:hover {
+  color: #0099ff;
+}
+
+/* unordered list styles */
+.ul-list ul {
+  list-style: none;
+  padding: 10;
+  margin-top: 55px;
+  width: 375px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ul-list li {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 5px;
+
+
+
+
+}
+
+.ul-list a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.ul-list a:hover {
+  color: #007bff;
+}
+
+
+/*signup:/*
+
+.bg-img {
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+    top: 0;
+    font-weight: 500;
+    letter-spacing: .05em;
+    position: absolute;
+}
+.navbar-a {
+    position: fixed; /* фіксуємо навбар на верху екрану */
+    top: 0; /* позиціюємо на верхній межі екрану */
+    left: 0; /* розміщуємо зліва відносно сторінки */
+    right: 0; /* розміщуємо справа відносно сторінки */
+    padding-left: 8%;
+    margin-top: 50px;
+    height: 60px; /* задаємо висоту навбара */
+    color: #fff; /* додаємо колір тексту */
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar ul {
+  list-style: none; /* видаляємо маркери списку */
+  margin: 0;
+  padding: 0;
+  display: flex; /* задаємо flex-контейнер */
+  justify-content: space-between; /* вирівнюємо елементи по ширині контейнера */
+  align-items: center; /* вирівнюємо елементи по вертикалі */
+  height: 100%;
+}
+
+.navbar li {
+  margin: 0 20px; /* відступ між елементами меню */
+}
+
+.text-up{
+    color: #FFFFFF;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+    float: left;
+    padding-top: 60px;
+
+
+}
+
+.signup-form-container {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0px #00000030;
+  margin-top: -50px;
+  margin-left: 630px;
+  margin-bottom: 200px;
+  float: right;
+  width: 24%;
+
+
+}
+#id_car_in_fleet {
+  display: block;
+}
+
+.login-form.spacer {
+  margin-top: 20px;
+}
+
+.login-form .input-group {
+  margin-bottom: 15px;
+}
+.form-car_in_fleet{
+  margin-top: 10px;
+  margin-right: 150px;
+
+}
+.form-car_in_fleet{
+  margin-top: 10px;
+  margin-right: 150px;
+}
+.form-car_in_fleet-count{
+    width: 1000%;
+}
+.login-form .input-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+  outline: none;
+  border-bottom: 2px solid #f7b731;
+}
+
+.login-form .submit {
+  display: block;
+  width: 100%;
+
+}
+
+#ember36 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #40df6d;
+}
+.language {
+text-align: center;
+}
+
+.sidebar-text {
+    position: fixed; /* або absolute, залежно від ваших потреб */
+    top: 0;
+    left: 0;
+    width: 200px; /* або будь-яка інша ширина, яка вам потрібна */
+    padding: 20px;
+    background-color: #f5f5f5; /* або будь-який інший колір фону */
+  }

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+     {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+        <link rel="shortcut icon" href="https://fleets.bolt.eu/v3.64.0/favicon-85a68af9e6cd9a9cd63f02f5425c060d.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+<div>
+
+<div class="ul-list">
+    <ul>
+        <li><a href="{% url 'order_panel' %}">Панель замовлення</a></li>
+        <li><a href="{% url 'orders_history' %}">Історія замовлень</a></li>
+        <li><a href="{% url 'live_map' %}">Мапа наживо</a></li>
+        <li><a href="{% url 'car_park' %}">Автопарк</a></li>
+        <li><a href="{% url 'drivers' %}">Водії</a></li>
+        <li><a href="{% url 'cars' %}">Автомобілі</a></li>
+        <li><a href="{% url 'productivity_panel' %}">Панель продуктивності</a></li>
+        <li><a href="{% url 'validity_documents' %}">Термін дії документів скоро сплине</a></li>
+            <li><a href="{% url 'week_reports' %}">Тижневі звіти</a></li>
+            <li><a href="{% url 'day_reports' %}">Щоденні звіти</a></li>
+        <li><a href="{% url 'payments' %}">Виплати</a></li>
+        <li><a href="{% url 'accounts' %}">Рахунки</a></li>
+        <li><a href="{% url 'passenger_accounts' %}">Рахунки пасажирів</a></li>
+        <li><a href="{% url 'bolt_accounts' %}">Рахунки Bolt</a></li>
+        <li><a href="{% url 'compensation_accounts' %}">Рахунки компенсацій</a></li>
+        <li><a href="{% url 'generated_files' %}">Згенеровані файли</a></li>
+        <li><a href="{% url 'my_profile' %}">Мій профіль</a></li>
+        <li><a href="{% url 'actions' %}">Дії</a></li>
+    </ul>
+</div>
+
+</div>
+
+{% endblock content %}
