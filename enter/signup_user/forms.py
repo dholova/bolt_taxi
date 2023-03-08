@@ -156,9 +156,6 @@ class SignupForm(forms.ModelForm):
             'language': forms.Select(choices=LANGUAGES),
             'password': forms.PasswordInput()
         }
-    # class Meta:
-    #     model = CustomUser
-    #     fields = ['email', 'phone', 'car_in_fleet', 'confirmed', 'language']
 
 
 class UserLoginForm(forms.Form):
@@ -166,16 +163,7 @@ class UserLoginForm(forms.Form):
     password = forms.CharField(widget=forms.PasswordInput())
     language = forms.ChoiceField(label='language', choices=LANGUAGES, required=False, widget=forms.Select(choices=LANGUAGES))
 
-    # def clean_email(self):
-    #     email = self.cleaned_data['email']
-    #     if not '@' in email:
-    #         raise forms.ValidationError('Invalid email address')
-    #     return email
-    #
-    # def clean_password(self):
-    #     password = self.cleaned_data['password']
-    #     # Add password validation here
-    #     return password
+
 
 class ForgotPasswordForm(forms.ModelForm):
     class Meta:
@@ -198,24 +186,6 @@ class PersonalInformationForm(forms.ModelForm):
             'language': forms.Select(choices=LANGUAGES),
         }
 
-
-# class PaymentDetailsForm(forms.ModelForm):
-#     class Meta:
-#         model = CustomUser
-#         fields = ['billing_type', 'company_name', 'address', 'registration_code', 'vat_liability',
-#                   'vat_number', 'bank_acc_holder_name', 'bank_acc', 'bic_swift', 'language']
-#         widgets = {
-#             'billing_type': forms.Select(choices=BILLING_TYPE),
-#             'company_name': forms.TextInput(attrs={'placeholder': 'ABC Taxis Ltd'}),
-#             'address': forms.TextInput(attrs={'placeholder': 'Хрещатик 1, Київ, 02000'}),
-#             'registration_code': forms.TextInput(attrs={'placeholder': '12345678'}),
-#             'vat_liability': forms.RadioSelect(choices=VAT_LIABILITY),
-#             'vat_number': forms.TextInput(attrs={'placeholder': '1122334'}),
-#             'bank_acc_holder_name': forms.TextInput(attrs={'placeholder': 'ABC Taxis Ltd / John Doe'}),
-#             'bank_acc': forms.TextInput(attrs={'placeholder': 'UA123456789098765432'}),
-#             'bic_swift': forms.TextInput(attrs={'placeholder': 'HABALT22'}),
-#             'language': forms.Select(choices=LANGUAGES),
-#         }
 
 class DocumentsForm(forms.ModelForm):
     class Meta:
@@ -275,54 +245,6 @@ class PaymentDetailsForm(forms.ModelForm):
                     self.add_error(field_name, 'This field is not required for persons')
         return cleaned_data
 
-# class PaymentDetailsForm(forms.Form):
-#
-    # billing_type = forms.Select(choices=BILLING_TYPE, attrs={'class': 'billing-type'})
-    # company_name = forms.TextInput(attrs={'class': 'company-name', 'placeholder': 'ABC Taxis Ltd'})
-    # person_name = forms.TextInput(attrs={'class': 'person-name', 'placeholder': 'John Doe'})
-    # address = forms.TextInput(attrs={'placeholder': 'Хрещатик 1, Київ, 02000'})
-    # registration_code = forms.TextInput(attrs={'placeholder': '12345678'})
-    # vat_liability = forms.RadioSelect(choices=VAT_LIABILITY)
-    # vat_number = forms.TextInput(attrs={'placeholder': '1122334'})
-    # bank_acc_holder_name = forms.TextInput(attrs={'placeholder': 'ABC Taxis Ltd / John Doe'})
-    # bank_acc = forms.TextInput(attrs={'placeholder': 'UA123456789098765432'})
-    # bic_swift = forms.TextInput(attrs={'placeholder': 'HABALT22'})
-    # language = forms.Select(choices=LANGUAGES)
 
-from django import forms
 
-# class PaymentDetailsForm(forms.Form):
-#     BILLING_CHOICES = (
-#         ('Company', 'Company'),
-#         ('Person', 'Person')
-#     )
-#
-#
-#     billing_type = forms.Select(choices=BILLING_CHOICES, attrs={'class': 'billing-type'})
-#     company_name = forms.TextInput(attrs={'class': 'company-name', 'placeholder': 'ABC Taxis Ltd'})
-#     person_name = forms.TextInput(attrs={'class': 'person-name', 'placeholder': 'John Doe'})
-#     address = forms.TextInput(attrs={'placeholder': 'Хрещатик 1, Київ, 02000'})
-#     registration_code = forms.TextInput(attrs={'placeholder': '12345678'})
-#     vat_liability = forms.RadioSelect(choices=VAT_LIABILITY)
-#     vat_number = forms.TextInput(attrs={'placeholder': '1122334'})
-#     bank_acc_holder_name = forms.TextInput(attrs={'placeholder': 'ABC Taxis Ltd / John Doe'})
-#     bank_acc = forms.TextInput(attrs={'placeholder': 'UA123456789098765432'})
-#     bic_swift = forms.TextInput(attrs={'placeholder': 'HABALT22'})
-#     language = forms.Select(choices=LANGUAGES)
-#     def clean(self):
-#         cleaned_data = super().clean()
-#         billing_type = cleaned_data.get('billing_type')
-#         if billing_type == "Company":
-#             for field_name in ['company_name', 'address', 'registration_code', 'vat_liability']:
-#                 if not cleaned_data.get(field_name):
-#                     self.add_error(field_name, 'This field is required for companies')
-#             for field_name in ['person_name']:
-#                 if cleaned_data.get(field_name):
-#                     self.add_error(field_name, 'This field is not required for companies')
-#         elif billing_type == "Person":
-#             for field_name in ['person_name', 'address', 'bank_acc_holder_name', 'bank_acc', 'bic_swift', 'language']:
-#                 if not cleaned_data.get(field_name):
-#                     self.add_error(field_name, 'This field is required for persons')
-#             for field_name in ['company_name', 'registration_code', 'vat_liability', 'vat_number']:
-#                 if cleaned_data.get(field_name):
-#                     self.add_error(field_name, 'This field is not required for persons')
+

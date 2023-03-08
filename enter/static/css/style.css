@@ -312,10 +312,10 @@ text-align: center;
 }
 
 .sidebar-text {
-    position: fixed; /* або absolute, залежно від ваших потреб */
+    position: fixed; 
     top: 0;
     left: 0;
-    width: 200px; /* або будь-яка інша ширина, яка вам потрібна */
+    width: 200px; 
     padding: 20px;
-    background-color: #f5f5f5; /* або будь-який інший колір фону */
+    background-color: #f5f5f5; 
   }
